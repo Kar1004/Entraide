@@ -130,6 +130,4 @@ dist
 .pnp.*
 /public/image
 /.env
-/package-lock.json
-/package.json
 /.vscode
