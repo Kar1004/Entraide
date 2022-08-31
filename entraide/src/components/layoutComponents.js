@@ -17,7 +17,7 @@ const HcLayout = ({children}) =>{
         return (
           <Layout>
             <Header>
-                <Menu theme='dark' mode='vertical' defaultSelectedKeys={['1']} style={menuStyle}>
+                <Menu theme='dark' mode='vertical' defaultSelectedKeys={['1']}>
                   <Menu.Item key="1"><Link to='/'>Accueil</Link></Menu.Item>
                   <Menu.Item key="2"><Link to='/'>Demande</Link></Menu.Item>
                 </Menu>

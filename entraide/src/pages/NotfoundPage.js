@@ -1,14 +1,11 @@
 import React ,{useState} from 'react';
 
-function HelperPage() {
-    
-
+function Notfound(){
 
         return ( 
             <div>
-                  <h1>Aidant</h1>
-
+             <h1>Not found</h1>
             </div>
          )
         }
-export default HelperPage
+export default  Notfound;

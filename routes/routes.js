@@ -1,4 +1,6 @@
+const { Router } = require('express')
 const express = require('express')
+const passport = require ('passport')
 const Home = require('../controllers/home.js')
 const {Inscription, User ,Users ,UsersUpdate, UsersDel, UserInscription} = require ('../controllers/inscription.js')
 const routes = express.Router()
@@ -6,6 +8,15 @@ const routes = express.Router()
 
 
 routes.get( '/home',Home)
+//Authentification
+routes.post('/signup',passport.authenticate('signup' ,{session:false}),
+async(req,res,next) =>{
+    res.json({
+        message:'signup Ok',
+        user: req.user
+    })
+}
+)
 
 //inscription
 routes.get('/inscription', Inscription )
